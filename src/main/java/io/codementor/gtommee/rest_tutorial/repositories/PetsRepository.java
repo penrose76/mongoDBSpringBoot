@@ -6,11 +6,13 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface PetsRepository extends MongoRepository<Pets, String> {
     Pets findBy_id(ObjectId _id);
-    default String terst(){
+
+/*    default String terst(){
         return "";
     }
-
     default String terst3(){
         return "";
     }
+
+ */
 }
